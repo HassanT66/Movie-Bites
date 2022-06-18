@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html runat="server" lang="en">
+	<head> 
+	<!--https://www.instructables.com/Make-your-HTML-Website-suitable-for-Mobile-Devices/ -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<link rel="stylesheet" href="mystyle.css">
+	<title> Best Reviews </title>
+	<script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            
+        <!-- Script below is for font size increse and decrease -->
+          <script type="text/javascript">
+			// https://www.technicalkeeda.com/jquery-tutorials/how-to-increase-decrease-font-size-of-page-using-jquery By Yashwant Chavan, Views 72193, Last updated on 14-Feb-2019
+			$(document).ready(function(){        
+           var originalSize = $('div').css('font-size');         
+			// reset        
+			$(".resetMe").click(function(){           
+			$('div').css('font-size', originalSize);         
+			});
+         
+			// Increase Font Size          
+			$(".increase").click(function(){         
+			var currentSize = $('div').css('font-size');         
+			var currentSize = parseFloat(currentSize)*1.2;          
+			$('div').css('font-size', currentSize);         
+			return false;          
+			});        
+		  
+           // Decrease Font Size       
+           $(".decrease").click(function(){        
+           var currentFontSize = $('div').css('font-size');        
+           var currentSize = $('div').css('font-size');        
+           var currentSize = parseFloat(currentSize)*0.8;        
+           $('div').css('font-size', currentSize);
+			
+           return false;         
+           });         
+         });
+         
+      </script>
+	  <!--Facebook button css and img below  -->
+	  <div id="fb-root"></div>
+	  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="jxGVnxDg"></script>
+	</head>
+	
+<!-- Author: Hassan tanveer Last Edited: Aug 15th 2021-->
+<body>
+	<!--Dark mode and light mode buttons-->
+	<button class = "buttonlight" onclick="darkMode()" "backColor()" >Dark Mode</button>
+	<button class = "buttonlight" onclick="lightMode()" "backColor()" >Light Mode</button>
+		<!--Font up and down buttons below -->
+		<input type="button" class="increase" value=" + ">
+		<input type="button" class="decrease"  value=" - "/>
+		<input type="button" class="resetMe" value=" = ">
+		<div>Click + to increase font, - to decrese font and = to reset
+
+	<!--Dark mode scriipt is found below-->
+	<script>
+
+		document.getElementById('change').onclick = changeColor;   
+
+		function darkMode() { // Creates a function called dark mode
+        document.body.style.color = "white";    // changing all text on website to the color white
+		document.body.style.backgroundColor = "black"; // changing the background to the color black 
+        return false;
+		//https://www.codegrepper.com/code-examples/javascript/javascript+change+all+text+color Code Refernece
+		<!-- light mode script is below which simple resets the page-->
+		}
+			function lightMode() {
+				location.reload();
+			}
+	
+	</script>
+	
+<h1 id = "p" class = "centre" > <span class= "headerfonts"> Movie Bites </span> </h1> <!-- instead of using span for paragraph im using in header so i can use css for page titles-->
+	<ul class = bar_ul >   <!--The following is a List for my tabs that was created using a guide from W3 schools tabs page -->
+	<li class = bar_li ><a class = bar_a href="home.html">Home</a></li>
+	<li class = bar_li ><a class = bar_a href="recent.html">Recent Reviews</a></li>
+	<li class = bar_li ><a class = bar_a href="moviesearch.html">Movie Search</a></li>
+	<li class = bar_li ><a class = bar_a href="tvshows.html">Tv Show Search</a></li>
+	<li class = bar_li ><a class = bar_a href="animes.html">Anime Search</a></li>
+	<li class = bar_li ><a class = bar_a href="authors.html">Authors</a></li>
+	<li class = bar_li ><a class = bar_a href="podcasts.html">Podcasts</a></li>
+	<li class = bar_li ><a class = bar_a , bar_active href="about.html">About us</a></li>
+		</ul>
+	<div class = "centre"> <!--Decided to div the image because i will put a slider there later-->
+		<h2  id = "p"class = "movie mf">Newly added Reviews!</h2>
+			<p id = "p">Take a look you might find somthing you like!</p>
+			<p id = "p">Have a suggestion? Use the question mark on the bottem right to talk directly to us!</p>
+			 <!--Decided to div the image because i will put a slider there later
+			 slider is now in taken from traversy media Tuturial on Aug 2nd 2021 from https://www.youtube.com/watch?v=4YQ4svkETS0&t=129s-->
+			 
+			 <script>
+				var i = 0; 			// Start Point
+				var images = [];	// Images Array
+				var time = 3000;	// Time Between Switch
+	 
+				// Image List
+				images[0] = "z5.jpg ";
+				images[1] = "z1.png ";
+				images[2] = "z4.png";
+				images[3] = "z6.png";
+
+				// Change Image
+				function changeImg(){
+					document.slide.src = images[i];
+
+					// Check If Index Is Under Max
+					if(i < images.length - 1){
+						// Add 1 to Index
+						i++; 
+					} else { 
+						// Reset Back To O
+						i = 0;
+					}
+
+					// Run function every x seconds
+					setTimeout("changeImg()", time);
+				}
+
+				// Run function when page loads
+				window.onload=changeImg;
+			</script>
+			<img name ="slide" width = "1200" height = "500">
+			
+			<!-- Sagebin: The Dark Knight. (n.d.). Retrieved August 15, 2021, from https://www.sagebin.com/detail/?id=95 -->
+	</div>
+	<hr>
+	<div class = "centre">
+	<h3 id = "p" class = "movie"> Recent Reviews of our movies can be found using the link below</h3> 
+		<a class = "buttonb" href="recent.html">Recent Reviews</a>
+	<h3 id = "p" class = "movie"> Movie search can be found using link below</h3> 
+		<a class = "buttonb" href="moviesearch.html">Movie Search</a>
+	<br>
+	<br>
+
+	<a class = "buttonb" href="http://www.imdb.com" target="_blank"> Website link to IMDB for more reviews from them</a>
+	<!--Buttons for my poll -->
+	</div>
+	<h2 class = "movie"> What was your favourite review this week poll below</h2>
+	<div class = "centre">
+	<!--Creates a button that references its respective movie function on click which increses score by 1  -->
+	<button class = "button_poll" " type="button" onClick="darkScore()">The Dark Knight</button>
+		<p>Score: <a id="dark">0</a></p>
+
+	<button class = "button_poll" type="button" onClick="bleachScore()">Bleach</button>
+		<p>Score: <a id="bleach">0</a></p>
+
+	<button class = "button_poll" type="button" onClick="lifeScore()"> The Disastrous Life of Saiki K</button>
+		<p>Score: <a id="life">0</a></p>
+
+	<button class = "button_poll" type="button" onClick="demonScore()">Demon Slayer</button>
+		<p>Score: <a id="demon">0</a></p>
+
+	<button class = "button_poll" type="button" onClick="motherScore()">How I met your mother</button>
+		<p>Score: <a id="mother">0</a></p>
+
+
+	</div> <!--Poll Function below  -->
+		<script>
+
+	
+		var dark = 0; // sets score to 0
+		function darkScore() {  //names fucntion
+        dark += 1;
+        document.getElementById("dark").innerHTML = dark; // gets the button score and changes it to plus 1 when clicked 
+		}
+		// all below code is same as upper for commenting
+		var bleach = 0;
+		function bleachScore() {
+        bleach += 1;
+        document.getElementById("bleach").innerHTML = bleach;
+		}
+		
+		var  life = 0;
+		function lifeScore() {
+        life += 1;
+        document.getElementById("life").innerHTML = life;
+		}
+		
+		var demon = 0;
+		function demonScore() {
+        demon += 1;
+        document.getElementById("demon").innerHTML = demon;
+		}
+		
+		var mother= 0;
+		function motherScore() {
+        mother += 1;
+        document.getElementById("mother").innerHTML = mother;
+		}
+		// https://stackoverflow.com/questions/22402777/html-javascript-button-click-counter
+	</script>
+	
+	<div class = "centre">
+		<h3 id = "p" class = "movie">Based on your poll last week for top 5 movies of all time below</h3>
+			<ol class = "bar_ul">
+				<li class = "bar_a">Shawshank Redemption</li>
+				<li class = "bar_a">The Godfather</li>
+				<li class = "bar_a">The dark Knight</li>
+				<li class = "bar_a">The gotfather Part 2</li>
+				<li class = "bar_a">12 Angry Men</li>
+			</ol>
+	
+	<p id = "p" class = "movie">In a twist it matches the imdb top 100</p>
+	
+	
+	<h3 class = movie> If you like our site please consider sharing with friends using button below</h3>
+		<br>
+		<br>
+	<!--facebook button code -->
+	<div class="fb-share-button" data-href="http://student.athabascau.ca/~hassanta5/UNIT%206/home.html" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fstudent.athabascau.ca%2F%7Ehassanta5%2FUNIT%25206%2Fhome.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+	<!-- https://developers.facebook.com/docs/plugins/share-button/#  -->
+	</div>
+	</div>
+	<!--support chat code  -->
+	<div class="powr-chat" id="9c6a4d84_1631415071"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+
+</body>
+
+</html>

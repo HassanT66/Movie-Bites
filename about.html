@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html runat="server" lang="en">
+<head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+		<link rel="stylesheet" href="mystyle.css">
+		<script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            
+			<!--Script for font size-->
+         	<script type="text/javascript">
+			// https://www.technicalkeeda.com/jquery-tutorials/how-to-increase-decrease-font-size-of-page-using-jquery By Yashwant Chavan, Views 72193, Last updated on 14-Feb-2019
+			$(document).ready(function(){        
+				var originalSize = $('div').css('font-size');         
+			// reset        
+			$(".resetMe").click(function(){           
+			$('div').css('font-size', originalSize);         
+            });
+         
+           // Increase Font Size          
+            $(".increase").click(function(){         
+				var currentSize = $('div').css('font-size');         
+				var currentSize = parseFloat(currentSize)*1.2;          
+			$('div').css('font-size', currentSize);         
+				return false;          
+			});        
+		  
+			// Decrease Font Size       
+			$(".decrease").click(function(){        
+				var currentFontSize = $('div').css('font-size');        
+				var currentSize = $('div').css('font-size');        
+				var currentSize = parseFloat(currentSize)*0.8;        
+			$('div').css('font-size', currentSize);         
+				return false;         
+				});         
+			});
+         
+		</script>
+	
+		<title> About </title>
+</head>
+<!-- Author: Hassan tanveer Last Edited: Aug 15th 2021-->
+
+
+<body>
+
+
+			<button class = "buttonlight" onclick="darkMode()" "backColor()" >Dark Mode</button>
+			<button class = "buttonlight" onclick="lightMode()" "backColor()" >Light Mode</button>
+
+			<input type="button" class="increase" value=" + ">
+			<input type="button" class="decrease" value=" - "/>
+			<input type="button" class="resetMe" value=" = ">
+			<div>Click + to increase font, - to decrese font and = to reset
+	
+	
+			<script>
+
+				document.getElementById('change').onclick = changeColor;   
+
+					function darkMode() { // Creates a function called dark mode
+						document.body.style.color = "white";    // changing all text on website to the color white
+						document.body.style.backgroundColor = "black"; // changing the background to the color black 
+					return false;
+				//https://www.codegrepper.com/code-examples/javascript/javascript+change+all+text+color Code Refernece
+	
+					}
+					function lightMode() {
+					location.reload();
+					}
+	
+
+
+			</script>
+
+
+			<h1 id = "p" class = "headerfonts"> About Us </h1>
+				<ul class = bar_ul >
+					<li class = bar_li ><a class = bar_a href="home.html">Home</a></li>
+					<li class = bar_li ><a class = bar_a href="recent.html">Recent Reviews</a></li>
+					<li class = bar_li ><a class = bar_a href="moviesearch.html">Movie Search</a></li>
+					<li class = bar_li ><a class = bar_a href="tvshows.html">Tv Show Search</a></li>
+					<li class = bar_li ><a class = bar_a href="animes.html">Anime Search</a></li>
+					<li class = bar_li ><a class = bar_a href="authors.html">Authors</a></li>
+					<li class = bar_li ><a class = bar_a href="podcasts.html">Podcasts</a></li>
+					<li class = bar_li ><a class = bar_a , bar_active href="about.html">About us</a></li>
+		</ul>
+		
+		
+		
+
+
+	
+	<p class = "centre"> We give the watcher what they want short easy reviews written by average people to know what to watch before you start it </p>
+	
+	
+	<!--chat function-->
+	
+	<div class="powr-chat" id="9c6a4d84_1631415071"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+
+	<div class = "centre">
+
+	<!--Facebook api-->
+	
+	<iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fstudent.athabascau.ca%2F~hassanta5%2FUNIT%25207%2Fhome.html&layout=button_count&size=large&width=88&height=28&appId" width="88" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+	
+	</div>
+	
+</body>
+
+</html>

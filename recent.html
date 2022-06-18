@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html runat="server" lang="en">
+
+  
+
+	<head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+		<link rel="stylesheet" href="mystyle.css">
+		<script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            
+        
+         <!-- Script below is for font size increse and decrease -->
+		 <script type="text/javascript">
+			// https://www.technicalkeeda.com/jquery-tutorials/how-to-increase-decrease-font-size-of-page-using-jquery By Yashwant Chavan, Views 72193, Last updated on 14-Feb-2019
+			$(document).ready(function(){        
+				var originalSize = $('div').css('font-size');         
+			// reset        
+			$(".resetMe").click(function(){           
+			$('div').css('font-size', originalSize);         
+            });
+         
+           // Increase Font Size          
+            $(".increase").click(function(){         
+				var currentSize = $('div').css('font-size');         
+				var currentSize = parseFloat(currentSize)*1.2;          
+			$('div').css('font-size', currentSize);         
+				return false;          
+			});        
+		  
+			// Decrease Font Size       
+			$(".decrease").click(function(){        
+				var currentFontSize = $('div').css('font-size');        
+				var currentSize = $('div').css('font-size');        
+				var currentSize = parseFloat(currentSize)*0.8;        
+			$('div').css('font-size', currentSize);         
+				return false;         
+				});         
+			});
+         
+		</script>
+	<title> Recent Reviews </title>
+	</head>
+	<!-- Author: Hassan tanveer Last Edited: Aug 15th 2021-->
+
+<body>
+	
+		<!--Chat function api-->
+		<div class="powr-chat" id="9c6a4d84_1631415071"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+
+		<!--Light annd dark mode button-->
+		<button class = "buttonlight" onclick="darkMode()" "backColor()" >Dark Mode</button>
+		<button class = "buttonlight" onclick="lightMode()" "backColor()" >Light Mode</button>
+
+		<!--Font up down button-->
+		<input type="button" class="increase" value=" + ">
+		<input type="button" class="decrease" value=" - "/>
+		  <input type="button" class="resetMe" value=" = ">
+			<div>Click + to increase font, - to decrese font and = to reset
+
+		<!--Dark and light mode function-->
+		<script>
+				
+				document.getElementById('change').onclick = changeColor;   
+
+				function darkMode() { // Creates a function called dark mode
+				document.body.style.color = "white";    // changing all text on website to the color white
+				document.body.style.backgroundColor = "black"; // changing the background to the color black 
+				return false;
+				//https://www.codegrepper.com/code-examples/javascript/javascript+change+all+text+color Code Refernece
+	
+				}
+				function lightMode() {
+					location.reload();
+				}
+	
+		</script>
+
+		<h1 id = "p" class = "centre"> <span class="headerfonts">Welcome to the recent Reviews </span> </h1>
+		
+		<!--Tab layout code-->
+			<ul class = bar_ul >
+				<li class = bar_li ><a class = bar_a href="home.html">Home</a></li>
+				<li class = bar_li ><a class = bar_a href="recent.html">Recent Reviews</a></li>
+				<li class = bar_li ><a class = bar_a href="moviesearch.html">Movie Search</a></li>
+				<li class = bar_li ><a class = bar_a href="tvshows.html">Tv Show Search</a></li>
+				<li class = bar_li ><a class = bar_a href="animes.html">Anime Search</a></li>
+				<li class = bar_li ><a class = bar_a href="authors.html">Authors</a></li>
+				<li class = bar_li ><a class = bar_a href="podcasts.html">Podcasts</a></li>
+				<li class = bar_li ><a class = bar_a , bar_active href="about.html">About us</a></li>
+			</ul>
+		
+		<!--Cranswick, A. (2021, June 16). New poster for Space Jam: A New Legacy. Retrieved August 16, 2021, from https://www.flickeringmyth.com/2021/06/new-poster-for-space-jam-a-new-legacy/-->
+		
+
+		<div class = "row">
+		<div class="column">
+				<h2 id = "p" class = "movie mf"> How I met your mother</h2>
+				<!--https://www.republicworld.com/entertainment-news/web-series/how-i-met-your-mother-christmas-episodes-to-warm-your-heart-this-holiday-season.html-->
+				<img src="z2.jpeg" style="width:100%">
+	
+				<p id = "p">How I Met your mother is a romantic comedy that will take you on a journey like you were apart of the “gang”. 
+				In season one we observe a lot of different unique characters which is based on the actor’s true personalities. 
+				The gang consist of 5 different characters who are all unique in their own way and unique character development. 
+				Set in New York City Ted, the protagonist and his friends have crazy adventures while on his way to finding his true love. 
+				The show is a frame story, which is a story within another story. No story is the same and will have you laughing the whole season.</p>
+	
+				<h2 id = "p" class = "movie mf"> The Disastrous Life of Saiki K</h2> 
+				<!--Anigan, S. (2021, June 24). The Disastrous Life of Saiki K Watch Order Guide. Retrieved August 30, 2021, from https://www.gojinshi.com/the-disastrous-life-of-saiki-k-watch-order-guide/-->
+				<img src="z3.jpg" style="width:100%">
+				<p id = "p">What seems like a boring anime with a pink haired protagonist on surface level, The Disastrous Life of Saiki K surprises you with an 
+				interesting take on what it’s truly like being an all powerful being trying to navigate high school life. The plot centres around Kusuo
+				Saiki and his desire for a peaceful and average lifestyle, however the daily antics of his high school friends and surrounding community 
+				get him in situations that require the use of some of his many abilities and powers (you just have to watch it to know how many). 
+				This entire story plays out while there is an underlying threat of the world being destroyed (which Saiki is preventing through his
+				ability to revert things to their original state temporarily, again you just have to watch it to understand the extent of his powers)
+				which I thought provided a well thought out and creative twist to an otherwise mundane comedy anime. The one problem this anime does
+				have is it’s lack of memorable cast surrounding Saiki (other than the main supporting characters), due to an overplayed use of a new
+				transfer student course of events, however I feel that they account for this weakness by having the new students coming in be given
+				supernatural abilities like talking to ghosts or telling peoples future. Overall, I feel that this anime is a must watch and primarily 
+				falls short in the aspect that a new season hasn’t come out yet!</p>
+	
+		</div>
+  
+		<div class="column">
+  
+				<h2 id = "p" class = "movie mf"> The Dark Knight </h2>
+				<img src="z5.jpg" style="width:100%">
+				<p id = "p"> Once again Christopher Nolan has shown his movie making prowess with the lastest addition to the batman movie. Heath Ledgers joker performance
+				was out of this world and the movie will for sure be highly regarded by comic lovers.
+	
+				<h2 id = "p" class = "movie mf"> Demon Slayer </h2>
+				<!-- Demon Slayer. Kimetsu no Yaiba. [Online Image]. (n.d). Demon Slayer: Kimetsu no Yaiba Season
+				1 is Coming to Netflix in January 2021. https://www.whats-on
+				netflix.com/news/demon-slayer-kimetsu-no-yaiba-season-1-is-coming-to-netflix-in-january-2021/-->
+	
+				<img src="z4.png" style="width:100%">
+				<p id = "p">Action packed filled with emotions tells a tale about the protagonists goal on saving his little sister. Disaster struck for Tanjiro making his way back 
+				from providing ends meet for his family as Tanjiro sees his family dead lying on the ground. However, he managed to find one of his family members alive but 
+				not stable condition as she was turned to a demon. Tanjiro made it as his goal to do whatever it takes in order to revert his sister back to normal. Tanjiro 
+				goes on a journey and becomes a demon slayer to find the cure for his sister. The anime gives watchers the exhilarating feeling on Tanjiro's determination on to
+				protect the only family he has. As well as the amazing animation which makes the fights more exciting to watch. However, the one problem is that the anime has is 
+				the character development. The characters have become a generic shounen character where the character acquiring new things to be able to successful in their goal. 
+				Overall, I feel like this anime has a great animation which results into sucking in the viewer, but the poor character development makes the anime fall short on 
+				the potential it has to become one of the best animes to be released this decade.</p>
+				
+				
+				<h2 id = "p" class = "movie mf"> Bleach </h2>
+				<!--  TV, Tubi. “Tubi TV Adds All 366 Episodes of Anime Hit BLEACH.” Tubi TV Adds All 366 Episodes of Anime Hit BLEACH, 26 June 2018, www.prnewswire.com/news-releases/tubi-tv-adds-all-366-episodes-of-anime-hit-bleach-300440062.html. -->
+				<img src="z6.png" style="width:100%">
+				<p id = "p">Bleach is a Japanese anime that was created by Tite Kubo. Bleach is a Shonen anime that tells a story of a fifteen-year-old Ichigo Kurosaki, a 
+				high-school student who can talk and see the dead. With the amazing power that was gifted to Ichigo, he was later introduced to Rukia Kuchiki who 
+				has been sent to the living world to complete the task of killing the dead who can harm the living. After an unfortunate scene that led to Rukia's 
+				failure, it led to Ichigo stealing her powers and becoming a Shinigami (Known as killing the evil dead). The story continues as Ichigo is introduced 
+				into a new life of becoming a Shinigami 
+				and must take on the task of killing the evil and protecting the living world with other Shinigami’s. This creative anime has been made in 
+				2004 and had finally finished in 2012 with a span of over 350 episodes.</p>
+	
+		</div>  
+
+		</div>
+		<!--simple table below-->
+		<div class = "centre">
+			<h2 class = "movie mf" > Below you will find the recent reviews and there ratings</h2>
+
+			<table class = "bar_ul centertable">
+			<tr>
+			<th>Movie Title</th>
+			<th> Release date</th>
+			<th> Rating /10</th>
+		</tr>
+		
+			<tr>
+			<td>Suicide Squad</td>
+			<td> 2021</td>
+			<td> 5/10</td>
+		</tr>
+		<tr>
+			<td>Shawshank redemption</td>
+			<td> 1998</td>
+			<td> 9.7/10</td>
+		</tr>
+		<tr>
+			<td>The Dark Knight</td>
+			<td> 2008</td>
+			<td> 9/10</td>
+		</tr>
+
+	</table>
+
+
+	</div>
+
+	<!--chat-->
+	<div class="powr-chat" id="9c6a4d84_1631415071"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+
+		
+		<div class = "centre">
+	<!--Facebook API-->
+		<iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fstudent.athabascau.ca%2F~hassanta5%2FUNIT%25207%2Fhome.html&layout=button_count&size=large&width=88&height=28&appId" width="88" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+	</div>
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html runat="server" lang="en">
+
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<link rel="stylesheet" href="mystyle.css">
+	<script type="text/javascript" src="slideshow_effect.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            
+        
+          <!-- Script below is for font size increse and decrease -->
+		 <script type="text/javascript">
+			// https://www.technicalkeeda.com/jquery-tutorials/how-to-increase-decrease-font-size-of-page-using-jquery By Yashwant Chavan, Views 72193, Last updated on 14-Feb-2019
+			$(document).ready(function(){        
+				var originalSize = $('div').css('font-size');         
+			// reset        
+			$(".resetMe").click(function(){           
+			$('div').css('font-size', originalSize);         
+            });
+         
+           // Increase Font Size          
+            $(".increase").click(function(){         
+				var currentSize = $('div').css('font-size');         
+				var currentSize = parseFloat(currentSize)*1.2;          
+			$('div').css('font-size', currentSize);         
+				return false;          
+			});        
+		  
+			// Decrease Font Size       
+			$(".decrease").click(function(){        
+				var currentFontSize = $('div').css('font-size');        
+				var currentSize = $('div').css('font-size');        
+				var currentSize = parseFloat(currentSize)*0.8;        
+			$('div').css('font-size', currentSize);         
+				return false;         
+				});         
+			});
+         
+		</script>
+		<title> Tv Show Search </title>
+</head>
+
+
+
+<!-- Author: Hassan tanveer Last Edited: Aug 15th 2021-->
+<body>
+
+		<!--Light and dark button-->
+		<button class = "buttonlight" onclick="darkMode()" "backColor()" >Dark Mode</button>
+		<button class = "buttonlight" onclick="lightMode()" "backColor()" >Light Mode</button>
+		
+		
+		<!--font up down and buttons-->
+		
+		<input type="button" class="increase" value=" + ">
+		<input type="button" class="decrease" value=" - "/>
+		<input type="button" class="resetMe" value=" = ">
+		<div>Click + to increase font, - to decrese font and = to reset
+	
+		<!--dark mode script-->
+		<script>
+
+		document.getElementById('change').onclick = changeColor;   
+
+			function darkMode() { // Creates a function called dark mode
+			document.body.style.color = "white";    // changing all text on website to the color white
+			document.body.style.backgroundColor = "black"; // changing the background to the color black 
+			return false;
+			//https://www.codegrepper.com/code-examples/javascript/javascript+change+all+text+color Code Refernece
+	
+			}
+			function lightMode() {
+			location.reload();
+			}
+	
+		</script>
+		<h1 id = "p" class = "headerfonts">TV show search Page</h1>
+			<ul class = bar_ul >
+				<li class = bar_li ><a class = bar_a href="home.html">Home</a></li>
+				<li class = bar_li ><a class = bar_a href="recent.html">Recent Reviews</a></li>
+				<li class = bar_li ><a class = bar_a href="moviesearch.html">Movie Search</a></li>
+				<li class = bar_li ><a class = bar_a href="tvshows.html">Tv Show Search</a></li>
+				<li class = bar_li ><a class = bar_a href="animes.html">Anime Search</a></li>
+				<li class = bar_li ><a class = bar_a href="authors.html">Authors</a></li>
+				<li class = bar_li ><a class = bar_a href="podcasts.html">Podcasts</a></li>
+				<li class = bar_li ><a class = bar_a , bar_active href="about.html">About us</a></li>
+		</ul>
+
+
+		<h2 class = "centre" mf:> Search for show below </h2>
+		
+		<!--Search function Jqeury-->
+		<div class = "centre">
+			<input  type="text" id="searchtxt" />
+			<input   type="button" value="search" onClick="replaceText();" id="highlightButton" />
+		</div>
+
+		<!--img divider code-->
+		<div class = "row">
+		<div class="column">
+			<h2 id = "p" class = "movie mf"> How I met your mother</h2>
+			<!--https://www.republicworld.com/entertainment-news/web-series/how-i-met-your-mother-christmas-episodes-to-warm-your-heart-this-holiday-season.html-->
+				<img src="z2.jpeg" style="width:100%">
+			
+				<p id = "p">How I Met your mother is a romantic comedy that will take you on a journey like you were apart of the “gang”. 
+				In season one we observe a lot of different unique characters which is based on the actor’s true personalities. 
+				The gang consist of 5 different characters who are all unique in their own way and unique character development. 
+				Set in New York City Ted, the protagonist and his friends have crazy adventures while on his way to finding his true love. 
+				The show is a frame story, which is a story within another story. No story is the same and will have you laughing the whole season.</p>
+				<span class="imdbRatingPlugin" data-user="ur136684873" data-title="tt0460649" data-style="p3"><a href="https://www.imdb.com/title/tt0460649/?ref_=plg_rt_1"><img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_37x18.png" alt=" How I Met Your Mother
+				(2005) on IMDb" />
+				</a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script>
+
+		</div>
+			<div class="column">
+			<h2 id = "p" class = "movie mf"> Lupin</h2>
+			<img src="z7.png" style="width:100%">
+			<p>Amazing show!! Omar Sy, who plays Assane Diop inspired by Arsene Lupin, elevated the series on his own. He played the role of gentleman thief perfectly. The storytelling is off the charts making this series a must-watch. The series relates to many real-life issues we are experiencing in 2021.  I watched all the episodes non-stop. Luckily the first season was only five episodes. I highly recommend the show to everyone and CAN’T WAIT FOR SEASON 3!!!!</p>
+			<span class="imdbRatingPlugin" data-user="ur136684873" data-title="tt2531336" data-style="p3"><a href="https://www.imdb.com/title/tt2531336/?ref_=plg_rt_1"><img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_37x18.png" alt=" Lupin
+			(2021) on IMDb" />
+			</a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script>
+			<!--O'neill, M. (n.d.). s Lupin on Netflix based on a book? Google search. Retrieved September 11, 2021, from https://www.google.com/search?q=lupin&rlz=1C5CHFA_enCA760CA760&sxsrf=AOaemvIpcJEoxhRZRghRmGerzUOLaC1DAA%3A1631383726216&source=lnms&tbm=isch&sa=X&ved=2ahUKEwic5vj7wffyAhWkneAKHSrXADoQ_AUoAXoECAEQAw&cshid=1631383831025625&biw=1440&bih=609#imgrc=L5Tm5GriUfTzZM.  -->
+	</div>  
+
+	</div>
+		<!--chat api-->
+		<div class="powr-chat" id="9c6a4d84_1631415071"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+		<div class = "centre">
+
+		<!--facebook-->
+		<iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fstudent.athabascau.ca%2F~hassanta5%2FUNIT%25207%2Fhome.html&layout=button_count&size=large&width=88&height=28&appId" width="88" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+		</div>
+</body>
+
+
+</html>
